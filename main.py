@@ -6,9 +6,9 @@ def bubbleSort(array):
     isSorted = False
     while not isSorted:
         isSorted = True
-        for idx in range(len(array) - 1):
-            if array[idx + 1] < array[idx]:
-                swap(idx, idx + 1, array)
+        for i in range(len(array) - 1):
+            if array[i + 1] < array[i]:
+                swap(i, i + 1, array)
                 isSorted = False
     return array
 
